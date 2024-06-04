@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Card from './Card'
+import CardList from './CardList';
 
 const coffeOption = [
   {
@@ -13,16 +14,10 @@ const coffeOption = [
 ]
 
 function App() {
-  const [cart, setCart] = useState([]);
-
-  console.log(cart)
 
   return (
     <>
-      {coffeOption.map((item) => (
-        <Card key={item.id} product={item} cart={cart} setCart={setCart} />
-      ))
-      }
+      <CardList products={coffeOption} />
     </>
   )
 }

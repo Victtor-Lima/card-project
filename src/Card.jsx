@@ -2,27 +2,7 @@ import React from 'react';
 import CartButton from './CartButton';
 import './Card.css'
 
-function alterarArray(array, obj) {
-  return array.map((item) => {
-    if(item.id === obj.id) { 
-      item.amount += 1;
-    }
-    return item;
-  })
-}
-
 const Card = ({ product, cart, setCart}) => {
-
-  function handleClick(value) {
-    const item = cart.find((item) => item.id === value.id);
-    if(!item) {
-      value.amount = 1;
-      setCart([...cart, value]);
-    } else {
-      const newArray = alterarArray(cart, value);
-      setCart(newArray);
-    }
-  } 
 
   return (
     <div className='container'>
@@ -36,7 +16,7 @@ const Card = ({ product, cart, setCart}) => {
       <p className='description'>{product.description}</p>
       <div className='styling-div-card-priceFunc'>
         <span className='price'>${product.price}</span>
-        <CartButton activeFunc={handleClick} product={product}/>
+        <CartButton addToCart={{product, cart, setCart}} />
       </div>
     </div>
   )

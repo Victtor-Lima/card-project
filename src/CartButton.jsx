@@ -1,9 +1,11 @@
 import React from 'react';
+import { handleClick } from './handleClickFunc';
 
-const CartButton = ({ activeFunc, product }) => {
-  
+const CartButton = ({ addToCart }) => {
+  const arrParamCart = Object.values(addToCart);
+
   return (
-    <button onClick={() => activeFunc(product)} className='btn-addToCart'>Add to Cart</button>
+    <button onClick={() => handleClick(arrParamCart)} className='btn-addToCart'>Add to Cart</button>
   )
 }
 

@@ -4,6 +4,7 @@ import Card from './Card';
 const CardList = ({ products }) => {
   const [cart, setCart] = useState([]);
 
+  console.log(cart)
   return (
     <section>
       {products.map((item) => (

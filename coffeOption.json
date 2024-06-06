@@ -1,0 +1,34 @@
+[
+  {
+    "img": "../img/coffee1.jpg",
+    "name": "Coffee1",
+    "price": 10,
+    "charact": ["Espresso", "Milk", "Classic"],
+    "description": "The traditional preparation involves pouring a shot of espresso into a cup, then adding steamed milk, and topping it with a layer of foamed milk.",
+    "id": "optioncoffee1" 
+  },
+  {
+    "img": "../img/coffee2.jpg",
+    "name": "Coffee2",
+    "price": 8,
+    "charact": ["Espresso", "Milk", "Classic"],
+    "description": "The traditional preparation involves pouring a shot of espresso into a cup, then adding steamed milk, and topping it with a layer of foamed milk.",
+    "id": "optioncoffee2" 
+  },
+  {
+    "img": "../img/coffee3.jpg",
+    "name": "Coffee3",
+    "price": 10,
+    "charact": ["Espresso", "Milk", "Classic"],
+    "description": "The traditional preparation involves pouring a shot of espresso into a cup, then adding steamed milk, and topping it with a layer of foamed milk.",
+    "id": "optioncoffee3" 
+  },
+  {
+    "img": "../img/coffee4.jpg",
+    "name": "Coffee4",
+    "price": 5,
+    "charact": ["Espresso", "Milk", "Classic"],
+    "description": "The traditional preparation involves pouring a shot of espresso into a cup, then adding steamed milk, and topping it with a layer of foamed milk.",
+    "id": "optioncoffee4" 
+  }
+]

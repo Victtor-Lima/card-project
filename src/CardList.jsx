@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { getLocal } from "./localStorage_funcs";
 import Card from './Card';
 
 const CardList = ({ products }) => {
   const [cart, setCart] = useState([]);
 
-  console.log(cart)
+  useEffect(() => {
+    const cartLocal = getLocal('cart');
+    if(cartLocal) {
+      setCart(cartLocal);
+    }
+  }, []);
+
   return (
     <section>
       {products.map((item) => (

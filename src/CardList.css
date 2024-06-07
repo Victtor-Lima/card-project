@@ -1,0 +1,31 @@
+.cardList-container {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+@media (max-width: 1215px) {
+  .cardList-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .cardList-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .cardList-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 310px) {
+  .cardList-container {
+    padding: 5px;
+  }
+}

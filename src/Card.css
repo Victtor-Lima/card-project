@@ -2,9 +2,26 @@
   max-width: 350px;
   background: #F9F9F8;
   padding: 20px;
-  margin: 10px;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.30) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@media (max-width: 630px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 310px) {
+  .container {
+    padding: 10px;
+  }
 }
 
 .img-product {

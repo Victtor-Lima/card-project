@@ -1,6 +1,6 @@
 import React from 'react';
 import CartButton from './CartButton';
-import './Card.css'
+import './Card.css';
 
 const Card = ({ product, cart, setCart}) => {
 

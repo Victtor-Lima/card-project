@@ -1,12 +1,19 @@
+import { setLocal } from "./localStorage_funcs";
+
 export function handleClick(arrParam) {
-  const item = arrParam[1].find((item) => item.id === arrParam[0].id);
+  const [product, arr, func, nameLocal] = arrParam;
+  const item = arr.find((item) => item.id === product.id);
   
   if(item) {
-    const newArray = alterarArray(arrParam[1], arrParam[0]);
-    arrParam[2](newArray);
+    const newArray = alterarArray(arr, product);
+    func(newArray);
+    nameLocal && setLocal(nameLocal, newArray);
   } else {
-    arrParam[0].amount = 1;
-    arrParam[2]([...arrParam[1], arrParam[0]]);
+    product.amount = 1;
+    const newElementInArray = [...arr, product];
+    func(newElementInArray);
+    setLocal(nameLocal, newElementInArray);
+    nameLocal && setLocal(nameLocal, newElementInArray);
   }
 } 
 

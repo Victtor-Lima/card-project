@@ -1,6 +1,6 @@
 import { setLocal } from "./localStorage_funcs";
 
-export function handleClick(arrParam) {
+export function handleAddToCart(arrParam) {
   const [product, arr, func, nameLocal] = arrParam;
   const item = arr.find((item) => item.id === product.id);
   

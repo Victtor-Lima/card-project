@@ -24,7 +24,11 @@ const CardList = ({ products }) => {
   return (
     <section className='cardList-container'>
       {products.map((item) => (
-        <Card key={item.id} product={item} cart={cart} setCart={setCart} favorite={[favorite, setFavorite]}/>
+        <Card 
+          key={item.id} 
+          product={item} 
+          arrCart={[cart, setCart]} 
+          arrFavorite={[favorite, setFavorite]}/>
       ))}
     </section>
   )

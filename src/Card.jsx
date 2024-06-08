@@ -1,13 +1,13 @@
 import React from 'react';
-import CartButton from './CartButton';
+import BtnCart from './BtnCart';
 import './Card.css';
 import BtnFavorite from './BtnFavorite';
 
-const Card = ({ product, cart, setCart, favorite }) => {
+const Card = ({ product, arrCart, arrFavorite }) => {
 
   return (
     <div className='container'>
-      <BtnFavorite addToFavorites={[product, favorite, 'favorites']}/>
+      <BtnFavorite addToFavorites={[product, arrFavorite, 'favorites']}/>
       <img className='img-product' src={product.img} alt={product.description} />
       <h1 className='title'>{product.name}</h1>
       <ul className='list-charact'>
@@ -18,7 +18,7 @@ const Card = ({ product, cart, setCart, favorite }) => {
       <p className='description'>{product.description}</p>
       <div className='styling-div-card-priceFunc'>
         <span className='price'>${product.price}</span>
-        <CartButton addToCart={{product, cart, setCart, nameList: 'cart'}} />
+        <BtnCart addToCart={[product, arrCart, 'card']} />
       </div>
     </div>
   )

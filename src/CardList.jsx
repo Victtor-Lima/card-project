@@ -5,6 +5,7 @@ import './CardList.css';
 
 const CardList = ({ products }) => {
   const [cart, setCart] = useState([]);
+  const [favorite, setFavorite] = useState([]);
 
   useEffect(() => {
     const cartLocal = getLocal('cart');
@@ -13,10 +14,17 @@ const CardList = ({ products }) => {
     }
   }, []);
 
+  useEffect(() => {
+    const favoriteLocal = getLocal('favorites');
+    if(favoriteLocal) {
+      setFavorite(favoriteLocal);
+    }
+  }, []);
+  
   return (
     <section className='cardList-container'>
       {products.map((item) => (
-        <Card key={item.id} product={item} cart={cart} setCart={setCart} />
+        <Card key={item.id} product={item} cart={cart} setCart={setCart} favorite={[favorite, setFavorite]}/>
       ))}
     </section>
   )

@@ -1,0 +1,17 @@
+.button-cart {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #F9F9F8;
+  background-color: #392D22;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.button-cart:hover {
+  background-color: #4d3722;
+}
+
+.button-cart:active {
+  background-color: #634121;
+}

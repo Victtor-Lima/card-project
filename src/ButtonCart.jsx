@@ -1,7 +1,8 @@
 import React from 'react';
 import { handleAddToCart } from './handleAddToCart';
+import './ButtonCart.css';
 
-const BtnCart = ({ addToCart }) => {
+const ButtonCart = ({ addToCart }) => {
   const arrParamCart = [
     addToCart[0], 
     addToCart[1][0], 
@@ -10,8 +11,8 @@ const BtnCart = ({ addToCart }) => {
   ]
 
   return (
-    <button onClick={() => handleAddToCart(arrParamCart)} className='btn-cart'>Add to Cart</button>
+    <button onClick={() => handleAddToCart(arrParamCart)} className='button-cart'>Add to Cart</button>
   )
 }
 
-export default BtnCart;
+export default ButtonCart;

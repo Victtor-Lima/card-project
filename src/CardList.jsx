@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { getLocal } from "./localStorage_funcs";
-import Card from './Card';
+import { getLocal } from "./utilityFunctions/localStorage_funcs";
+import Card from './components/Card';
 import './CardList.css';
 
 const CardList = ({ products }) => {

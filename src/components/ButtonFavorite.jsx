@@ -1,5 +1,5 @@
 import React from 'react';
-import { handleFavoriteAction } from './handleFavoriteAction';
+import { handleFavoriteAction } from '../utilityFunctions/handleFavoriteAction';
 import { MdFavoriteBorder } from "react-icons/md";
 import { MdOutlineFavorite } from "react-icons/md";
 import './ButtonFavorite.css'

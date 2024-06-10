@@ -1,5 +1,5 @@
 import React from 'react';
-import { handleAddToCart } from './handleAddToCart';
+import { handleAddToCart } from '../utilityFunctions/handleAddToCart';
 import './ButtonCart.css';
 
 const ButtonCart = ({ addToCart }) => {

@@ -1,12 +1,12 @@
 import React from 'react'
 import CardList from './CardList';
-import coffeOptions from '../coffeOption.json'
+import coffeeOptions from '../coffeeOption.json'
 
 function App() {
 
   return (
     <>
-      <CardList products={coffeOptions} />
+      <CardList products={coffeeOptions} />
     </>
   )
 }

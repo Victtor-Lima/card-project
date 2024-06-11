@@ -1,6 +1,6 @@
 [
   {
-    "img": "../img/coffee1.jpg",
+    "img": "/card-project/img/coffee1.jpg",
     "name": "Coffee1",
     "price": 10,
     "charact": ["Espresso", "Milk", "Classic"],
@@ -8,7 +8,7 @@
     "id": "optioncoffee1" 
   },
   {
-    "img": "../img/coffee2.jpg",
+    "img": "/card-project/img/coffee2.jpg",
     "name": "Coffee2",
     "price": 8,
     "charact": ["Espresso", "Milk", "Classic"],
@@ -16,7 +16,7 @@
     "id": "optioncoffee2" 
   },
   {
-    "img": "../img/coffee3.jpg",
+    "img": "/card-project/img/coffee3.jpg",
     "name": "Coffee3",
     "price": 10,
     "charact": ["Espresso", "Milk", "Classic"],
@@ -24,7 +24,7 @@
     "id": "optioncoffee3" 
   },
   {
-    "img": "../img/coffee4.jpg",
+    "img": "/card-project/img/coffee4.jpg",
     "name": "Coffee4",
     "price": 5,
     "charact": ["Espresso", "Milk", "Classic"],

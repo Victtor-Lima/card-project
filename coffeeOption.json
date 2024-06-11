@@ -1,6 +1,6 @@
 [
   {
-    "img": "https://github.com/Victtor-Lima/card-project/blob/main/img/coffee1.jpg",
+    "img": "img/coffee1.jpg",
     "name": "Coffee1",
     "price": 10,
     "charact": ["Espresso", "Milk", "Classic"],
